@@ -19,6 +19,7 @@ void swap(int *a, int *b)
  * lomuto_partition - performs the lomuto partition scheme on
  * a given partition of an array
  * @array: array to be sorted
+ * @size: size of the array
  * @low: starting index of partition
  * @high: ending index of partition
  * Return: final index of the pivot
@@ -45,6 +46,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 
 	return (i + 1);
 }
+
 /**
  * quicksort - recursively sorts a partition of an array
  * using the quicksort algorithm
@@ -64,6 +66,7 @@ void quicksort(int *array, int low, int high, size_t size)
 		quicksort(array, partition_index + 1, high, size);
 	}
 }
+
 /**
  * quick_sort - function that sorts an array of integers in ascending order
  * @array: array to be sorted
@@ -77,3 +80,4 @@ void quick_sort(int *array, size_t size)
 	quicksort(array, 0, size - 1, size);
 
 }
+
