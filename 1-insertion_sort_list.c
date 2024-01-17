@@ -1,6 +1,11 @@
 #include "sort.h"
 
-/***/
+/**
+ * insertion_sort_list - sorts a doubly linked list of
+ * integers using the insertion sort list algorithm
+ * @list: doubly linked list to be sorted
+ */
+
 void insertion_sort_list(listint_t **list)
 {
 	listint_t	*current;
@@ -37,3 +42,4 @@ void insertion_sort_list(listint_t **list)
 		current = current->next;
 	}
 }
+
