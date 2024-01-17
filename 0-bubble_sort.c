@@ -8,11 +8,11 @@
 
 void swap(int *a, int *b)
 {
-        int tmp;
+	int tmp;
 
-        tmp = *b;
-        *b = *a;
-        *a = tmp;
+	tmp = *b;
+	*b = *a;
+	*a = tmp;
 }
 /**
  * bubble_sort - sorts an array using the bubble sort algorithm
